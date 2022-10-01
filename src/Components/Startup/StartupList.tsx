@@ -16,11 +16,11 @@ export default function StartupList(): ReactElement {
   }, []);
 
   return (
-    <Fragment>
+    <div id="startup-list">
       {startups.length !== 0 &&
         startups.map((startup, index) => (
           <StartupComponent key={index} startup={startup} />
         ))}
-    </Fragment>
+    </div>
   );
 }

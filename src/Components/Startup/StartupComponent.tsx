@@ -36,7 +36,7 @@ const StartupComponent: React.FC<StartupProps> = ({ startup }) => {
           }}
         >
           Founded: {startup.dateFounded.getFullYear()} | {startup.employees}{" "}
-          Employees | {startup.totalFunding} | {startup.currentInvestmentStage}
+          Employees | $ {startup.totalFunding} Mio. | {startup.currentInvestmentStage}
         </p>
 
         <b
